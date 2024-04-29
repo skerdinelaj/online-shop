@@ -1,9 +1,5 @@
 import { CardItem, addToCard, removeFromCard } from "../store/card-slice";
 import { useCardDispatchHook, useCardSelectorHook } from "../store/hooks";
-type CardItemProps = {
-
-}
-
 
 export default function CartItems() {
   const cartItems = useCardSelectorHook((state)=> state.card.items)
